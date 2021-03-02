@@ -31,13 +31,13 @@ public class Menu {
         default:
           System.out.println("You have made an invalid choice!");
       }
-    } while (!exit);
+    } while (exit == false);
 
     closeApp();
   }
 
   static void closeApp() {
-    System.out.println("Good-bye!");
+    System.out.println("\nGood-bye!");
   }
 
   private static final String mainMenuTxt = "" +
